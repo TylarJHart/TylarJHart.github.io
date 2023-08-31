@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1f6e687f63.js" crossorigin="anonymous"></script>
+    <title>Tylar Hart</title>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/remix.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#academics">Education</a></li>
+                <li><a href="#professional">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Expertise</p>
+            <h1>text <span>color</span><br>next line</h1>
+        </div>
+    </div>
+</div>
+<!-------------ABOUT------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/Bodyshot.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Put in paragraph about me for a decent amount of length</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Title</span><br>Short statement</li>
+                        <li><span>Title</span><br>Short statement</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2021 & 2023</span><br>Intern for NSW Police Force</li>
+                        <li><span>Title</span><br>Short statement</li>
+                        <li><span>Title</span><br>Short statement</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Title</span><br>Short statement</li>
+                        <li><span>Title</span><br>Short statement</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------Academic Experiences and Projects-------->
+<div id="academics">
+    <div class="container">
+        <h1 class="sub-title">Academic Experiences and Projects</h1>
+        <div class="academics-list">
+            <div>
+                <i class="fa-solid fa-code"></i>  <!--may not need this Font Awesome for these-->
+                <h2>Project/Experience 1</h2>
+                <p>Explanation</p>
+                <a href="#">Link if needed</a>
+            </div>
+            <div>
+                <h2>Project/Experience 2</h2>
+                <p>Explanation</p>
+                <a href="#">Link if needed</a>
+            </div>
+            <div>
+                <h2>Project/Experience 3</h2>
+                <p>Explanation</p>
+                <a href="#">Link if needed</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!---------Professional Experiences and Projects-------->
+<div id="professional">
+    <div class="container">
+        <h1 class="sub-title">Professional Experiences and Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/mountain.jpg">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>Description</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/bird.jpeg">
+                <div class="layer">
+                    <h3>Project that I had worked on</h3>
+                    <p>Description</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/fox.jpg">
+                <div class="layer">
+                    <h3>Project</h3>
+                    <p>Description</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!---------Contact-------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i></i>tylarjhart00@outlook.com</p>
+                <p><i class="fa-solid fa-mobile"></i>0403761009</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="CV/Tylar Hart Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright</p>
+    </div>
+</div>
+
+<!---------Research-------->
+
+
+
+
+<!---------Leadership OR Teamwork and Service-------->
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+    var sidemenu = document.getElementById("sidemenu")
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx-tX0C1emNcNYZnActAaqOoZ8atabL73ytYl3WIULqt4Hp-gnxL7lOxBwQzi4pXt5Kfw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+    })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
