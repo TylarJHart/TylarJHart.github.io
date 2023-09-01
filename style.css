@@ -410,6 +410,10 @@ nav .fa-solid{
     }
 }
 
+#project-header{
+    padding: 10px 10%;
+}
+
 #projects{
     padding: 50px;
     animation: slideUp 1s;
