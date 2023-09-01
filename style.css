@@ -14,6 +14,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
+    background: #080808;
     background-image: url(images/Headshot.png);
     background-size: cover;
     background-position: center;
@@ -143,19 +144,19 @@ nav ul li a:hover::after{
 }
 .academics-list div{
     background: #262626;
-    padding: 40px;
-    font-size: 13px;
+    padding: 30px;
+    font-size: 14px;
     font-weight: 300;
     border-radius: 10px;
     transition: all 0.5s;
 }
 .academics-list div i{
     font-size: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 .academics-list div h2{
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 1000;
     margin-bottom: 15px;
 }
 .academics-list div a{
@@ -169,6 +170,7 @@ nav ul li a:hover::after{
     background-color: #0eb1f4;
     transform: translateY(-10px);
 }
+
 
 /*------------Professional Experiences and Projects-------------*/
 #professional{
@@ -189,7 +191,10 @@ nav ul li a:hover::after{
     width: 100%;
     border-radius: 10px;
     display: block;
+    height: 100%;
+    object-fit: contain;
     transition: transform 0.5s;
+    
 }
 .layer{
     width: 100%;
@@ -244,6 +249,22 @@ nav ul li a:hover::after{
 }
 .btn:hover{
     background: #0eb1f4;
+}
+
+/*---------------Research----------------*/
+#research{
+    padding: 5px;
+    margin-bottom: 30px;
+}
+#research .row{
+    margin-top: 40px;
+}
+.research-col-1{
+    flex-basis: 10%;
+    font-size: 200px;
+}
+.research-col-2{
+    flex-basis: 85%;
 }
 
 /*----------------Contacts---------------*/
@@ -376,4 +397,50 @@ nav .fa-solid{
     color:#61b752;
     margin-top: -40px;
     display: block;
+}
+
+@keyframes slideUp {
+    0% { 
+        translate: 0 100px;
+        opacity: 0;
+    }
+    100% { 
+        translate: 0 0px; 
+        opacity: 1;
+    }
+}
+
+#projects{
+    padding: 50px;
+    animation: slideUp 1s;
+}
+.project-list{
+    margin-top: 50px;
+}
+.project-list ul{
+    list-style: none;
+}
+.project-list ul li{
+    padding: 40px;
+}
+.project-list ul li .projects-col-1{
+    flex-basis: 35%;
+}
+.project-list ul li .projects-col-1 img{
+    width: 100%;
+    border-radius: 15px
+}
+.project-list ul li .projects-col-2{
+    flex-basis: 60%;
+}
+
+.project-list ul li .projects-col-4{
+    flex-basis: 35%;
+}
+.project-list ul li .projects-col-3 img{
+    width: 100%;
+    border-radius: 15px
+}
+.project-list ul li .projects-col-3{
+    flex-basis: 60%;
 }
