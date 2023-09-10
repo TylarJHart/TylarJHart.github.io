@@ -7,6 +7,17 @@
 html{
     scroll-behavior: smooth;
 }
+html::-webkit-scrollbar{
+    width: 1vw;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: #262626;
+}
+html::-webkit-scrollbar-track{
+    background-color: #333;
+}
+
+
 body{
     background: #080808;
     color: #fff;
@@ -231,7 +242,6 @@ nav ul li a:hover::after{
     height: 100%;
     object-fit: contain;
     transition: transform 0.5s;
-    
 }
 .layer{
     width: 100%;
@@ -364,25 +374,70 @@ form .btn2{
     cursor: pointer;
 }
 /*wont need*/
-.copyright{
+/* .copyright{
     width: 100%;
     text-align: center;
     padding: 25px 0;
     background: #262626;
     font-weight: 300;
     margin-top: 20px;
+} */
+
+#msg{
+    color:#61b752;
+    margin-top: -40px;
+    display: block;
 }
+
+@keyframes slideUp {
+    0% { 
+        translate: 0 100px;
+        opacity: 0;
+    }
+    100% { 
+        translate: 0 0px; 
+        opacity: 1;
+    }
+}
+#project-header{
+    padding: 10px 10%;
+}
+#projects{
+    padding: 50px;
+}
+.project-list{
+    margin-top: 50px;
+}
+.project-list ul{
+    list-style: none;
+}
+.project-list ul li{
+    padding: 40px;
+}
+.project-list ul li .projects-col-1{
+    flex-basis: 35%;
+    animation: slideUp 1s;
+}
+.project-list ul li .projects-col-1 img{
+    width: 100%;
+    border-radius: 15px
+}
+.project-list ul li .projects-col-2{
+    flex-basis: 60%;
+    animation: slideUp 1s;
+}
+
 /*-----------Responsive webpage-------*/
 nav .fa-solid{
     display: none;
 }
-
 @media only screen and (max-width: 1050px){
     #header{
-        background-image: url(images/Headshot.png) /* can change this for mobile if needed*/
+        background-image: none; /* can change this for mobile if needed*/
+        height: 10vh;
     }
     .header-text{
-        margin-top: 100%;
+        margin-top: 0;
         font-size: 16px;
     }
     .header-text h1{
@@ -430,52 +485,23 @@ nav .fa-solid{
         font-size: 16px;
         margin-right: 20px;
     }
+    /*Research*/
+    .research-col-1{
+        flex-basis: 30%;
+    }
+    .research-col-2{
+        padding-right: 0;
+    }
+    /*Project*/
+    .project-list ul li .projects-col-1 img{
+        width: 50vh;
+    }
+    .project-list ul li .projects-col-2{
+        flex-basis: 100%;
+    }
     /*Contact*/
     .contact-left, .contact-right{
         flex-basis: 100%;
     }
 }
-#msg{
-    color:#61b752;
-    margin-top: -40px;
-    display: block;
-}
 
-@keyframes slideUp {
-    0% { 
-        translate: 0 100px;
-        opacity: 0;
-    }
-    100% { 
-        translate: 0 0px; 
-        opacity: 1;
-    }
-}
-
-#project-header{
-    padding: 10px 10%;
-}
-#projects{
-    padding: 50px;
-}
-.project-list{
-    margin-top: 50px;
-}
-.project-list ul{
-    list-style: none;
-}
-.project-list ul li{
-    padding: 40px;
-}
-.project-list ul li .projects-col-1{
-    flex-basis: 35%;
-    animation: slideUp 1s;
-}
-.project-list ul li .projects-col-1 img{
-    width: 100%;
-    border-radius: 15px
-}
-.project-list ul li .projects-col-2{
-    flex-basis: 60%;
-    animation: slideUp 1s;
-}

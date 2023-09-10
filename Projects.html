@@ -44,8 +44,8 @@
                                     <p>Co-leading a team of students for the design and development of a short message AI Co-Pilot application</p>
                                     <p>My responsibility is to assign tasks and manage project time. I am also focusing on training the model for the project.</p>
                                     <br><h3>Project Description:</h3>
-                                    <p>The intent of the product is to enable users to train their own data to be utilized for short messaging.</p>
-                                    <p>The data that it can be trained on would utilize user texts from a variety of different platforms with the user's consent. This could potentially extend to have multiple profiles dependent on who the message is directed for. The technology this relies on is natural language processing models to provide personalised responses for each user profile.</p>
+                                    <p>The intent of the product is to enable users to train their own data, to be utilized for short messaging.</p>
+                                    <p>The model is trained on user texts from a variety of different platforms with the user's consent. This could potentially extend to have multiple profiles dependent on who the message is directed for. The technology this relies on is natural language processing models to provide personalised responses for each user profile.</p>
                                 </div>
                             </div>
                         </div>
@@ -84,15 +84,25 @@
             </div>
         </div>
     </div>
-    <script>
-        let mybutton = document.getElementById("TopBtn");
-        window.onscroll = function() {scrollFunction()};
-        function scrollFunction() {
-        if (document.body.scrollTop > 1080/2 || document.documentElement.scrollTop > 1080/2) {
-            mybutton.style.display = "block";
-        } else {
-            mybutton.style.display = "none";
-        }
+</div>
+<script>
+        var sidemenu = document.getElementById("sidemenu")
+    function openmenu(){
+        sidemenu.style.right = "0";
     }
-    </script>
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    let mybutton = document.getElementById("TopBtn");
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+    if (document.body.scrollTop > 1080/2 || document.documentElement.scrollTop > 1080/2) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+    }
+</script>
 </body>
