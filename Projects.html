@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/logo5.png">
     <script src="https://kit.fontawesome.com/1f6e687f63.js" crossorigin="anonymous"></script>
     <title>Tylar Hart</title>
 </head>
@@ -15,28 +16,36 @@
         <ul id="sidemenu">
             <li><a href="index.html#header">Home</a></li>
             <li><a href="index.html#about">About</a></li>
-            <li><a href="index.html#academics">Achievements</a></li>
-            <li><a href="#">Projects</a></li>
+            <li><a href="index.html#academics">Services</a></li>
+            <li><a href="index.html#professional">Projects</a></li>
+            <li><a href="index.html#research">Research</a></li>
             <li><a href="index.html#contact">Contact</a></li>
             <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
         </ul>
         <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        <div class="to-top">
+            <a href="#header" id="TopBtn">Back to Top</a>
+        </div>
     </nav>
 </div>
     <div id="projects">
         <div class="container">
-            <h1>Projects</h1>
+            <h1 class="sub-title">Projects</h1>
             <div class="project-list">
                 <ul>
                     <li>
-                        <div id="sayeye">
+                        <div id="co-pilot">
                             <div class="row">
                                 <div class="projects-col-1">
-                                    <img src="images/ROS.png">
+                                    <img src="images/co-pilot.png">
                                 </div>
                                 <div class="projects-col-2">
-                                    <h2>Sayeye</h2>
-                                    <p>designing and developing hardware and software utilizing computer vision including object recognition, text recognition and facial recognition, as well has using haptic and audio feedback to allow visually impaired users to gather more information from their surroundings such as who they are talking to, what a sign says across the street and potential vehicles incoming at a crosswalk.</p>
+                                    <h2>Short Messaging AI Co-Pilot</h2>
+                                    <p>Co-leading a team of students for the design and development of a short message AI Co-Pilot application</p>
+                                    <p>My responsibility is to assign tasks and manage project time. I am also focusing on training the model for the project.</p>
+                                    <br><h3>Project Description:</h3>
+                                    <p>The intent of the product is to enable users to train their own data to be utilized for short messaging.</p>
+                                    <p>The data that it can be trained on would utilize user texts from a variety of different platforms with the user's consent. This could potentially extend to have multiple profiles dependent on who the message is directed for. The technology this relies on is natural language processing models to provide personalised responses for each user profile.</p>
                                 </div>
                             </div>
                         </div>
@@ -44,26 +53,46 @@
                     <li>
                         <div id="data-arena">
                             <div class="row">
-                                <div class="projects-col-3">
+                                <div class="projects-col-2">
                                     <h2>Data Arena</h2>
-                                    <p>Worked on a data visualisation project utilizing unreal enginer to map data on a 3D canvas. To view the data in a more immersive environment a 360 degree multimonitor setup was used, called the data arena was used</p>
+                                    <p>My role in the project was to ensure that the unreal engine project would work in the UTS Data Arena, this includes collaborating the controller and conversion of display to multiple monitors</p>
+                                    <br><h3>Project Description:</h3>
+                                    <p>Data visualisation project utilizing unreal engine to map Australian demographic data on a 3D canvas. To view the data in a more immersive environment a 360 degree multimonitor setup was used, called the data arena was used.</p>
                                 </div>
-                                <div class="projects-col-4">
-                                    <img src="images/unity.png">
+                                <div class="projects-col-1">
+                                    <img src="images/data arena.jpg">
                                 </div>
                             </div>
                         </div>
                     </li>
                     <li>
-                        <div id="co-pilot">
-                            <h2>Short Messaging AI Co-Pilot</h2>
-                            <p>Currently working in a group project to design and develop a short message AI Co-Pilot application used in a similar fashion to auto-complete, except auto-completing entire sentences given contextual prompts</p>
+                        <div id="sayeye">
+                            <div class="row">
+                                <div class="projects-col-1">
+                                    <img src="images/sayeye.png">
+                                </div>
+                                <div class="projects-col-2">
+                                    <h2>Sayeye</h2>
+                                    <p>My first project within University, my responsibility was around researching and developing object detection within the project.</p>
+                                    <br><h3>Project Description:</h3>
+                                    <p>Designing and developing hardware and software utilizing computer vision including object recognition, text recognition and facial recognition, as well has using haptic and audio feedback to allow visually impaired users to gather more information from their surroundings such as who they are talking to, what a sign says across the street and potential vehicles incoming at a crosswalk.</p>
+                                </div>
+                            </div>
                         </div>
                     </li>
                 </ul>
             </div>
-            </div>
-
         </div>
     </div>
+    <script>
+        let mybutton = document.getElementById("TopBtn");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+        if (document.body.scrollTop > 1080/2 || document.documentElement.scrollTop > 1080/2) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+    </script>
 </body>

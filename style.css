@@ -29,6 +29,10 @@ nav{
     justify-content: space-between;
     flex-wrap: wrap;
 }
+.navbar{
+    justify-content: space-between;
+    display: flex;
+}
 .logo{
     width: 140px;
     height: auto;
@@ -68,6 +72,36 @@ nav ul li a:hover::after{
 .header-text span{
     color: #0eb1f4
 }
+.to-top{
+    position:fixed;
+    padding: 15px;
+    border-radius: 10px;
+    cursor:pointer;
+    z-index: 99;
+    right: 30px;
+    bottom: 20px;
+}
+.to-top a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    display: none;
+}
+.to-top a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #0eb1f4;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+.to-top a:hover::after{
+    width: 100%;
+}
+
 
 /*------------ABOUT-------------*/
 #about{
@@ -124,6 +158,9 @@ nav ul li a:hover::after{
 }
 .tab-contents ul li span{
     color: #116eca;
+    font-size: 14px;
+}
+.tab-contents ul li p{
     font-size: 14px;
 }
 .tab-contents{
@@ -260,11 +297,16 @@ nav ul li a:hover::after{
     margin-top: 40px;
 }
 .research-col-1{
-    flex-basis: 10%;
+    flex-basis: 15%;
     font-size: 200px;
 }
+.research-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
 .research-col-2{
-    flex-basis: 85%;
+    flex-basis: 80%;
+    padding-right: 30%;
 }
 
 /*----------------Contacts---------------*/
@@ -413,10 +455,8 @@ nav .fa-solid{
 #project-header{
     padding: 10px 10%;
 }
-
 #projects{
     padding: 50px;
-    animation: slideUp 1s;
 }
 .project-list{
     margin-top: 50px;
@@ -429,6 +469,7 @@ nav .fa-solid{
 }
 .project-list ul li .projects-col-1{
     flex-basis: 35%;
+    animation: slideUp 1s;
 }
 .project-list ul li .projects-col-1 img{
     width: 100%;
@@ -436,15 +477,5 @@ nav .fa-solid{
 }
 .project-list ul li .projects-col-2{
     flex-basis: 60%;
-}
-
-.project-list ul li .projects-col-4{
-    flex-basis: 35%;
-}
-.project-list ul li .projects-col-3 img{
-    width: 100%;
-    border-radius: 15px
-}
-.project-list ul li .projects-col-3{
-    flex-basis: 60%;
+    animation: slideUp 1s;
 }

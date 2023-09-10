@@ -12,21 +12,27 @@
 <body>
 <div id="header">
     <div class="container">
-        <nav>
+        <div class="navbar">
             <img src="images/logo5.png" class="logo">
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#academics">Achievements</a></li>
-                <li><a href="#professional">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-            </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </nav>
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#academics">Services</a></li>
+                    <li><a href="#professional">Projects</a></li>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
         <div class="header-text">
             <p>Data Engineer</p>
             <h1>Hi, I'm <span>Tylar Hart</span></h1>
+        </div>
+        <div class="to-top">
+            <a href="#header" id="TopBtn">Back to Top</a>
         </div>
     </div>
 </div>
@@ -39,10 +45,14 @@
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
-                <p>I am in my final year of studying Data Engineering at the University of Technology Sydney.</p>
                 <br>
-                <p>Currently I am working on my research project as a part of my capstone... </p>
-
+                <p>Bring in a different perspective and identify aspects of improvement within software projects</p>
+                <br>
+                <p>I am a data engineer, with the ability to provide software development, AI development or database management skills.</p>
+                <br>
+                <p>Currently I am working on my research project as a part of my capstone for my final year in university on machine translation as well as working in a similar project focusing on conversational AI suggestions.</p>
+                <br>
+                <p></p>
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                     <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -51,46 +61,55 @@
                 <div class="tab-contents active-tab" id="skills">
                     <ul>
                         <li><span>Database Management</span><br>Design, Develop, Manage and Visualize Databases utilizing many different tools including Microsoft SQL Server Management Studio as well as Microsoft's Power BI</li>
-                        <li><span>Software Development</span><br>Skills in languages including Python, Java, Javascript, </li>
-                        <li><span>Artificial Intelligence</span><br>Design and Development of software with the implementation of AI tools utilizing API calls</li>
+                        <li><span>Software Development</span><br>Skills in languages including Python, Java and Javascript, with comprehension of C nad Matlab</li>
+                        <li><span>Artificial Intelligence</span><br>Design and Development of software with the implementation of AI tools utilizing API calls and pre-trained models</li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="experience">
                     <ul>
-                        <li><span>2021 & 2023</span><br>Intern for NSW Police Force</li>
-                        <li><span>2019-2020</span><br>UTS Startups -SayEye- AI for the visually impaired</li>
+                        <li><span>2021 & 2023</span><br>Intern for NSW Police Force
+                            <p>Brought new ideas into the workplace, enhancing aspects of text-detection and increasing the efficiency of object-detection by 700%</p>
+                        </li>
+                        <li><span>2019-2020</span><br>UTS Startups -SayEye- AI for the visually impaired
+                            <p>Responsible for the research and development of object detection to be utilized within ROS code</p>
+                        </li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="education">
                     <ul>
-                        <li><span>2019-2024(expected)</span><br>University of Technology Sydney</li>
-                        <li><span>2013-2018</span><br>Broughton Anglican College</li>
+                        <li><span>2019-2024(expected)</span><br>University of Technology Sydney<p>High Distinction Average - 6.18GPA</p></li>
+                        <li><span>2013-2018</span><br>Broughton Anglican College<p>82.3 ATAR</p></li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!---------Academic Experiences and Projects-------->
+<!---------Professional Experiences and Projects-------->
 <div id="academics">
     <div class="container">
-        <h1 class="sub-title">My Achievements</h1>
+        <h1 class="sub-title">My Services</h1>
         <div class="academics-list">
             <div>
                 <i class="fa-solid fa-code"></i>
-                <h2>Self-Taught</h2>
-                <p>Java and Python throughout Highschool to get a headstart</p>
+                <h2>Software programming expertise</h2>
+                <p>I have high capabilities in python and java code, and a strong ability to learn other coding languages if necessary</p>
                 <!-- <a href="Projects.html">Link if needed</a> -->
             </div>
             <div>
-                <i class="fa-solid fa-graduation-cap"></i>
-                <h2>6.18 GPA</h2>
-                <p>High Destinction Average in University</p>
+                <i class="fa-solid fa-comment"></i>
+                <h2>communication and teamwork skills</h2>
+                <p>I have a high level of capability for communication within projects, which is evident from achieving high distinctions in team project subjects</p>
             </div>
             <div>
                 <i class="fa-solid fa-arrow-trend-up"></i>
-                <h2>700%</h2>
-                <p>Increased efficiency of an object detection program for video</p>
+                <h2>Leadership qualities</h2>
+                <p>Display of leadership in a way that is open to different ideas and does not overshadow co-workers</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Data Visualisation</h2>
+                <p>Ability to transform and visualize provided data within many different tools such as Power BI</p>
             </div>
         </div>
     </div>
@@ -100,7 +119,7 @@
 
 
 
-<!---------Professional Experiences and Projects-------->
+<!---------Academic Experiences and Projects-------->
 <div id="professional">
     <div class="container">
         <h1 class="sub-title">My Projects</h1>
@@ -114,7 +133,7 @@
                 </div>
             </div>
             <div class="work">
-                <img src="images/data arena.jpg">
+                <img src="images/unreal.png">
                 <div class="layer">
                     <h3>Data Arena</h3>
                     <p>Data Visualisation using Unreal Engine in immersive 360 Degree room</p>
@@ -140,11 +159,13 @@
         <h1 class="sub-title">Current Research</h1>
         <div class="row">
             <div class="research-col-1">
-                <i class="fa-solid fa-book"></i>
+                <img src="images/machine-translation.png">
             </div>
             <div class="research-col-2">
                 <h2>Low Resource Machine Translation</h2>
-                <p>I am currently researching AI machine translation and how can MT models be improved with language pairs with few parallel corpora available</p>
+                <p>I am currently researching AI machine translation and how can MT models be improved with language pairs with few parallel corpora available.</p>
+                <p>I have completed my preliminary research on the topic and am currently conducting a literature review.</p><br>
+                <p>I have a basic understanding of the Japanese language and as such I believe my main focus will be on translation between Japanese and English utilizing low-resource methods to perform translation.</p>
             </div>
         </div>
     </div>
@@ -162,9 +183,9 @@
                 <h1 class="sub-title">Contact Me</h1>
                 <p><i class="fa-solid fa-envelope"></i></i>tylarjhart00@outlook.com</p>
                 <p><i class="fa-solid fa-mobile"></i>+61 403 761 009</p>
-                <div class="social-icons">
+                <!-- <div class="social-icons">
                     <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                </div>
+                </div> -->
                 <a href="CV/Tylar Hart Resume.pdf" download class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
@@ -178,9 +199,9 @@
             </div>
         </div>
     </div>
-    <div class="copyright">
+    <!-- <div class="copyright">
         <p>Copyright</p>
-    </div>
+    </div> -->
 </div>
 
 
@@ -225,7 +246,19 @@
     })
         .catch(error => console.error('Error!', error.message))
     })
-  </script>
+</script>
+<script>
+    let mybutton = document.getElementById("TopBtn");
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+    if (document.body.scrollTop > 1080/2 || document.documentElement.scrollTop > 1080/2) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+}
+</script>
+
 
 </body>
 </html>
