@@ -10,24 +10,25 @@
     <title>Tylar Hart</title>
 </head>
 <body>
-<div id="project-header">
-    <nav>
-        <img src="images/logo5.png" class="logo">
-        <ul id="sidemenu">
-            <li><a href="index.html#header">Home</a></li>
-            <li><a href="index.html#about">About</a></li>
-            <li><a href="index.html#academics">Services</a></li>
-            <li><a href="index.html#professional">Projects</a></li>
-            <li><a href="index.html#research">Research</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
-            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-        </ul>
-        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        <div class="to-top">
-            <a href="#header" id="TopBtn">Back to Top</a>
-        </div>
-    </nav>
-</div>
+    <div id="project-header">
+        <nav>
+            <img src="images/logo5.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="index.html#header">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#professional">Experience</a></li>
+                <li><a href="index.html#myprojects">Projects</a></li>
+                <li><a href="index.html#research">Research</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            <div class="to-top">
+                <a href="#project-header" id="TopBtn">Back to Top</a>
+            </div>
+        </nav>
+    </div>
     <div id="projects">
         <div class="container">
             <h1 class="sub-title">Projects</h1>
@@ -55,7 +56,7 @@
                             <div class="row">
                                 <div class="projects-col-2">
                                     <h2>Data Arena</h2>
-                                    <p>My role in the project was to ensure that the unreal engine project would work in the UTS Data Arena, this includes collaborating the controller and conversion of display to multiple monitors</p>
+                                    <p>My role in the project was to ensure that the unreal engine project would work in the UTS Data Arena, this includes collaborating the controller and conversion of display to multiple monitors.</p>
                                     <br><h3>Project Description:</h3>
                                     <p>Data visualisation project utilizing unreal engine to map Australian demographic data on a 3D canvas. To view the data in a more immersive environment a 360 degree multimonitor setup was used, called the data arena was used.</p>
                                 </div>
@@ -82,9 +83,28 @@
                     </li>
                 </ul>
             </div>
+            <h1>Other projects</h1>
+            <div class="project-list-other">
+                <div class="row">
+                    <div class="projects-col-1">
+                        <h2>Cryptocurrency market trends analysis and predictor</h2>
+                        <br>
+                        <p>My responsibility for the project was developing the web front-end of the product utilizing python and was my first step into web-development</p>
+                    </div>
+                    <div class="projects-col-2">
+                        <h2>Database development for IOT Store</h2>
+                        <br>
+                        <p>Responsible for the whole software development process of the shipment management system, as well as the overall design of the database utilizing java and mongoDB.</p>
+                    </div>
+                    <div class="projects-col-3">
+                        <h2>Council Fault Reporting Application</h2>
+                        <br>
+                        <p>Responsibility over the design of the web application front-end and back-end.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
 <script>
         var sidemenu = document.getElementById("sidemenu")
     function openmenu(){
@@ -106,3 +126,4 @@
     }
 </script>
 </body>
+</html>
