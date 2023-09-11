@@ -451,6 +451,9 @@ form .btn2{
 .project-list ul li .projects-col-1{
     flex-basis: 35%;
     animation: slideUp 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .project-list ul li .projects-col-1 img{
     width: 100%;
@@ -460,9 +463,11 @@ form .btn2{
     flex-basis: 60%;
     animation: slideUp 1s;
 }
+.project-list ul li .projects-col-2 h3{
+    color: #0eb1f4;
+}
 
 .project-list-other{
-    margin-top: 50px;
     padding: 40px;
 }
 .projects-col-1{
@@ -473,6 +478,15 @@ form .btn2{
 }
 .projects-col-3{
     flex-basis: 30%;
+}
+.projects-col-1 h3{
+    color: #0eb1f4;
+}
+.projects-col-2 h3{
+    color: #0eb1f4;
+}
+.projects-col-3 h3{
+    color: #0eb1f4;
 }
 /*-----------Responsive webpage-------*/
 nav .fa-solid{
